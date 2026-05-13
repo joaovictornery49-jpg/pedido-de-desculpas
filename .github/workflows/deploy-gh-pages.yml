@@ -30,3 +30,6 @@ jobs:
             .gitignore
             package.json
             publicar-github.ps1
+            servir-celular.js
+            abrir-hoje.ps1
+            abrir-hoje.cmd
