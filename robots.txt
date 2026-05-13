@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joaovictornery49-jpg.github.io/pedido-de-desculpas/sitemap.xml

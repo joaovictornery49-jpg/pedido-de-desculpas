@@ -1,0 +1,32 @@
+# Publica o site na branch gh-pages (GitHub Pages: Settings → Build and deployment → Branch → gh-pages / root).
+# Em Actions → General → Workflow permissions: marque "Read and write permissions" para o GITHUB_TOKEN poder fazer push.
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publicar em gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          exclude_assets: |
+            .github
+            .gitignore
+            package.json
+            publicar-github.ps1
