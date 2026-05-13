@@ -5,7 +5,7 @@ param(
 # Publica o site no GitHub (abra o PowerShell nesta pasta: Shift+clique direito > Abrir no Terminal).
 # 1) Crie um repositorio VAZIO em https://github.com/new (sem README).
 # 2) Edite a linha abaixo com a URL do seu repositorio e salve.
-$repoUrl = "https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git"
+$repoUrl = "https://github.com/joaovictornery49-jpg/pedido-de-desculpas.git"
 
 if ($repoUrl -match "SEU_USUARIO") {
   Write-Host "Edite publicar-github.ps1 e coloque a URL do seu repositorio em `$repoUrl." -ForegroundColor Yellow
