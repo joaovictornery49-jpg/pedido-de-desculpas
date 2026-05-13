@@ -1,0 +1,9 @@
+{
+  "name": "nossa-historia-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site estático Nossa História",
+  "scripts": {
+    "start": "npx --yes serve . -l 3000"
+  }
+}
