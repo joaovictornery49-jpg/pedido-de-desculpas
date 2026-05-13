@@ -1,3 +1,7 @@
+param(
+  [string] $Mensagem = "atualiza site"
+)
+
 # Publica o site no GitHub (abra o PowerShell nesta pasta: Shift+clique direito > Abrir no Terminal).
 # 1) Crie um repositorio VAZIO em https://github.com/new (sem README).
 # 2) Edite a linha abaixo com a URL do seu repositorio e salve.
@@ -11,9 +15,10 @@ if ($repoUrl -match "SEU_USUARIO") {
 
 git add .
 git status
-$msg = Read-Host "Mensagem do commit (Enter para usar: atualiza site)"
-if ([string]::IsNullOrWhiteSpace($msg)) { $msg = "atualiza site" }
-git commit -m $msg
+git diff --cached --quiet
+if ($LASTEXITCODE -ne 0) {
+  git commit -m $Mensagem
+}
 if (-not (git remote get-url origin 2>$null)) {
   git remote add origin $repoUrl
 }
