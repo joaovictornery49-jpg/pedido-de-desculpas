@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa História ❤️</title>
+  <link rel="canonical" href="https://joaovictornery49-jpg.github.io/pedido-de-desculpas/" />
+  <meta name="description" content="Nossa história: 12 meses de lembranças e um pedido de desculpas com carinho." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:url" content="https://joaovictornery49-jpg.github.io/pedido-de-desculpas/" />
+  <meta property="og:title" content="Nossa História ❤️" />
+  <meta property="og:description" content="12 meses, infinitas lembranças." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+      font-family:'Cormorant Garamond', serif;
+      overflow-x:hidden;
+      min-height:100vh;
+      background-image:
+      radial-gradient(circle at top, rgba(255,0,85,0.15), transparent 30%),
+      radial-gradient(circle at bottom, rgba(255,0,85,0.10), transparent 30%);
+    }
+
+    .container{
+      width:100%;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:40px 20px 80px;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .titulo h1{
+      font-size:4rem;
+      color:#ff5c8a;
+      text-shadow:0 0 20px rgba(255,92,138,0.5);
+      letter-spacing:2px;
+    }
+
+    .titulo p{
+      margin-top:10px;
+      color:#d8d8d8;
+      font-size:1.3rem;
+    }
+
+    .botoes{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:15px;
+      margin-bottom:40px;
+      max-width:1000px;
+    }
+
+    .botoes button{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      border:2px solid rgba(255,92,138,0.5);
+      background:#0d0d0d;
+      color:white;
+      cursor:pointer;
+      font-size:1.2rem;
+      transition:0.3s;
+      box-shadow:0 0 15px rgba(255,92,138,0.1);
+    }
+
+    .botoes button:hover{
+      transform:scale(1.08);
+      background:#ff5c8a;
+      box-shadow:0 0 25px rgba(255,92,138,0.5);
+    }
+
+    .card{
+      width:100%;
+      max-width:1200px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+      background:rgba(10,10,10,0.95);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:30px;
+      padding:40px;
+      box-shadow:0 0 40px rgba(255,92,138,0.12);
+      animation:fade 0.5s ease;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .imagem img{
+      width:100%;
+      border-radius:25px;
+      border:2px solid rgba(255,92,138,0.4);
+      box-shadow:0 0 30px rgba(255,92,138,0.15);
+      max-height:700px;
+      object-fit:cover;
+    }
+
+    .texto small{
+      color:#ff5c8a;
+      font-size:1.3rem;
+      letter-spacing:3px;
+    }
+
+    .texto h2{
+      font-size:5rem;
+      color:white;
+      margin:10px 0 30px;
+      line-height:0.9;
+    }
+
+    .texto h2 span{
+      font-family:'Great Vibes', cursive;
+      color:#ff5c8a;
+      display:block;
+      font-size:4rem;
+      margin-top:15px;
+    }
+
+    .texto p{
+      font-size:1.6rem;
+      line-height:1.8;
+      color:#ececec;
+      white-space:pre-line;
+    }
+
+    .footer{
+      margin-top:50px;
+      color:#ff5c8a;
+      font-size:2rem;
+      animation:pulse 1.5s infinite;
+    }
+
+    @keyframes pulse{
+      0%{transform:scale(1)}
+      50%{transform:scale(1.1)}
+      100%{transform:scale(1)}
+    }
+
+    @media(max-width:900px){
+      .card{
+        grid-template-columns:1fr;
+      }
+
+      .texto h2{
+        font-size:3rem;
+      }
+
+      .texto h2 span{
+        font-size:3rem;
+      }
+
+      .texto p{
+        font-size:1.3rem;
+      }
+
+      .titulo h1{
+        font-size:2.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="titulo">
+      <h1>Nossa História ❤️</h1>
+      <p>12 meses, infinitas lembranças</p>
+    </div>
+
+    <div class="botoes">
+      <button onclick="trocar(1)">01</button>
+      <button onclick="trocar(2)">02</button>
+      <button onclick="trocar(3)">03</button>
+      <button onclick="trocar(4)">04</button>
+      <button onclick="trocar(5)">05</button>
+      <button onclick="trocar(6)">06</button>
+      <button onclick="trocar(7)">07</button>
+
+      <!-- ADICIONE NOVOS MESES AQUI -->
+      <button onclick="trocar(8)">08</button>
+      <button onclick="trocar(9)">09</button>
+      <button onclick="trocar(10)">10</button>
+      <button onclick="trocar(11)">11</button>
+      <button onclick="trocar(12)">12 ❤️</button>
+    </div>
+
+    <div class="card">
+
+      <div class="imagem">
+        <img id="foto" src="mes1.jpg">
+      </div>
+
+      <div class="texto">
+        <small id="mesNumero">MÊS 01</small>
+        <h2 id="tituloMes">Nosso <span>primeiro mês</span></h2>
+        <p id="descricao"></p>
+      </div>
+
+    </div>
+
+    <div class="footer">❤️</div>
+
+  </div>
+
+  <script>
+
+    const meses = {
+
+      1:{
+        foto:'mes1.jpg',
+        titulo:'Nosso <span>primeiro mês</span>',
+        texto:`Como esquecer daquela sensação calorosa de não saber se ia ou não dar certo?
+
+Como eu sinto saudade da nossa primeira troca de olhares, você com aquele chocolate meio amargo e a gente indo ver o hamster kakaka.
+
+Chegou a ser engraçado o nosso primeiro beijo.
+
+Eu me lembro do primeiro mês muito bem, porque foi quando eu comecei a sentir realmente o que era amor de verdade e como isso poderia mudar a minha vida para uma sensação muito melhor.`
+      },
+
+      2:{
+        foto:'mes2.jpg',
+        titulo:'Mais próximos <span>mais nós</span>',
+        texto:`O segundo mês foi engraçado. Como nessa foto da gente indo em uma festa junina só para ir embora e acabar ficando no estacionamento do shopping.
+
+Aqui já estávamos muito mais próximos, mais íntimos e principalmente mais perfeitos juntos.
+
+Lembro que eu fui andando até a tua escola só para te ver por 10 minutos (que raiva daquele dia kakaka).
+
+E foi aí também que eu te dei o nosso filho, o Deadpool.`
+      },
+
+      3:{
+        foto:'mes3.jpg',
+        titulo:'Inseparáveis <span>de verdade</span>',
+        texto:`Essa foto estética não tinha como faltar.
+
+Não tem muito o que falar… nós éramos inseparáveis. Parecia que ninguém mais conseguiria nos desgrudar.
+
+Tudo estava indo certo. Tudo parecia perfeito.
+
+Nossos corpos já estavam acostumados com a presença um do outro, com o abraço, com o toque e com a paz que existia quando estávamos juntos.
+
+Mas ainda faltava algo…
+
+A nossa aliança. ❤️`
+      },
+
+      4:{
+        foto:'mes4.jpg',
+        titulo:'O melhor <span>caos possível</span>',
+        texto:`O quarto mês foi o que eu vejo como o mais engraçado e talvez um dos melhores.
+
+Foi a primeira vez que eu comecei a ir na sua casa, e tudo parecia diferente de um jeito bom.
+
+A nossa primeira noite juntos foi inesquecível.
+
+Eu lembro do quanto aquilo foi incrível, confortável e perfeito pra mim.
+
+Depois daquele dia, parecia que a gente não conseguia mais ficar longe um do outro.
+
+Cada momento ao seu lado começava a virar parte da minha rotina favorita.`
+      },
+
+      5:{
+        foto:'mes5.jpg',
+        titulo:'Mesmo no <span>caos</span>',
+        texto:`Agora esse mês foi louco.
+
+Você tinha acabado de ser expulsa de casa, e eu junto dos seus amigos fizemos de tudo pra tentar te deixar melhor e fazer você se sentir acolhida.
+
+A gente literalmente fez uma festa da pizza na casa da Sabrina pra que você tivesse uma despedida digna… e sinceramente, que festa incrível.
+
+Mesmo no meio do caos, eu lembro da gente conseguindo sorrir, conversar, rir de coisas idiotas e transformar um momento pesado em uma memória boa.
+
+Foi aí que eu percebi ainda mais que eu queria estar do seu lado nos momentos bons e principalmente nos ruins.`
+      },
+
+      6:{
+        foto:'mes6.jpg',
+        titulo:'San Michel <span>e saudade</span>',
+        texto:`Kakakaka… como eu poderia esquecer dessa época?
+
+Você trabalhando no San Michel com esse seu rostinho lindo me esperando todo fim de tarde.
+
+Eu sinto saudade daquela rotina.
+
+De sair da escola correndo só pra ir te ver, mesmo que fosse por pouco tempo. Pra mim, já valia completamente o dia.
+
+Era incrível como um simples momento ao seu lado conseguia deixar tudo mais leve.
+
+E eu acho que foi aí que eu comecei a perceber que qualquer lugar ficava melhor quando você estava nele.`
+      },
+
+      7:{
+        foto:'mes7.jpg',
+        titulo:'Mesmo depois <span>das brigas</span>',
+        texto:`No sétimo mês tivemos a nossa primeira grande crise de ciúmes… e foi muito louco perceber como, mesmo depois da briga, a gente conseguiu se reconciliar tão rápido.
+
+Foi aí que eu comecei a perceber ainda mais o quanto éramos ligados um ao outro.
+
+Parecia impossível simplesmente sumir da vida um do outro, porque no fim sempre existia algo puxando a gente de volta.
+
+Acho que naquele momento nós entendemos que, mesmo com os defeitos, as inseguranças e as brigas, ainda queríamos continuar juntos.`
+      },
+
+      /* =========================
+         ADICIONE OS NOVOS MESES AQUI
+         ========================= */
+
+      8:{
+        foto:'mes8.jpg',
+        titulo:'Seu título <span>aqui</span>',
+        texto:`Escreva aqui a história do mês 8.`
+      },
+
+      9:{
+        foto:'mes9.jpg',
+        titulo:'Seu título <span>aqui</span>',
+        texto:`Escreva aqui a história do mês 9.`
+      },
+
+      10:{
+        foto:'mes10.jpg',
+        titulo:'Seu título <span>aqui</span>',
+        texto:`Escreva aqui a história do mês 10.`
+      },
+
+      11:{
+        foto:'mes11.jpg',
+        titulo:'Seu título <span>aqui</span>',
+        texto:`Escreva aqui a história do mês 11.`
+      },
+
+      12:{
+        foto:'mes12.jpg',
+        titulo:'Me <span>desculpa</span>',
+        texto:`Aqui você escreve o seu pedido de desculpas final.`
+      }
+
+    }
+
+    function trocar(numero){
+
+      document.getElementById('foto').src = meses[numero].foto;
+      document.getElementById('tituloMes').innerHTML = meses[numero].titulo;
+      document.getElementById('descricao').innerText = meses[numero].texto;
+      document.getElementById('mesNumero').innerText = `MÊS 0${numero}`;
+
+    }
+
+    trocar(1)
+
+  </script>
+
+</body>
+</html>
